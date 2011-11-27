@@ -50,7 +50,7 @@ public class LineageRace {
 	
 	public void giveItems(Player player){
 		for(int i=0; i<itemList.size(); i++){
-			player.getInventory().setItem(i, itemList.get(i));
+			player.getInventory().addItem(itemList.get(i));
 		}
 	}
 

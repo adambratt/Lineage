@@ -2,6 +2,7 @@ package com.blockempires.lineage;
 
 import org.bukkit.block.Block;
 import org.bukkit.entity.Player;
+import org.bukkit.Bukkit;
 import org.bukkit.ChatColor;
 import org.bukkit.Material;
 import org.bukkit.event.block.Action;
@@ -21,7 +22,7 @@ public class LineagePlayerListener extends PlayerListener {
 
 	public void onPlayerJoin(PlayerJoinEvent event){
 		Player joinPlayer=event.getPlayer();
-		if(joinPlayer.hasPermission("lineage.hasrace")){
+		if(joinPlayer.hasPermission("lineage.hasrace") || joinPlayer.isOp() || LineagePlugin.getPermissions().has(joinPlayer, "*")){
 			return;
 		}
 		// Let's check to see if we have a spawn area setup

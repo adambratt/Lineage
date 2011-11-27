@@ -23,7 +23,7 @@ public class LineageAutoMessage implements Runnable {
 		}
 		player.sendMessage(prefix+ChatColor.AQUA+message.getMsg());
 		if(last && area.getHelp()) 
-			player.sendMessage(ChatColor.GRAY+"Type "+ChatColor.GREEN+"/yes"+ChatColor.GRAY+" if you would like to continue, if you would like to hear that again type"+ChatColor.LIGHT_PURPLE+" /repeat");
+			player.sendMessage(ChatColor.GRAY+"Type "+ChatColor.GREEN+"/ok"+ChatColor.GRAY+" if you would like to continue, if you would like to hear that again type"+ChatColor.LIGHT_PURPLE+" /repeat");
 	}
 
 }
